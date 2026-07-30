@@ -37,7 +37,10 @@ nav {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding: 16px;
+    padding: 16px 24px;
+    border-radius: 999px;
+    max-width: fit-content;
+    margin: 16px auto;
 }
 
 nav a {
