@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #F5F5F5;
@@ -13,6 +19,7 @@ h1, h2, h3 {
 
 a {
     color: #3378C9;
+    word-break: break-word;
 }
 
 header {
@@ -35,12 +42,13 @@ header h1 {
 nav {
     background-color: #EAEAEA;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
-    padding: 16px 24px;
-    border-radius: 999px;
-    max-width: fit-content;
+    gap: 16px;
+    padding: 16px;
     margin: 16px auto;
+    max-width: fit-content;
+    border-radius: 24px;
 }
 
 nav a {
@@ -78,6 +86,11 @@ footer {
 
 
 @media (min-width: 768px) {
+    nav {
+        border-radius: 999px;
+        gap: 24px;
+    }
+
     .content-columns {
         flex-direction: row;
     }
@@ -89,11 +102,28 @@ footer {
 
 
 @media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
     main {
-        padding: 40px 16px;
+        max-width: 1100px;
+        padding: 48px 16px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
     }
 
     .content-columns {
-        gap: 40px;
+        gap: 48px;
+    }
+
+    .content-columns section {
+        padding: 32px;
     }
 }
